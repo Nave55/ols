@@ -29,6 +29,9 @@ package ols_builtin
 @builtin kmag       :: proc(value: Quaternion) -> Float ---
 @builtin conj       :: proc(value: Complex_Or_Quaternion) -> Complex_Or_Quaternion ---
 
+@builtin expand_values   :: proc(value: Struct_Or_Array) -> (A, B, C, ...) ---
+@builtin compress_values :: proc(values: ...) -> Struct_Or_Array_Like_Type ---
+
 @builtin min   :: proc(values: ..T) -> T ---
 @builtin max   :: proc(values: ..T) -> T ---
 @builtin abs   :: proc(value: T) -> T ---
